@@ -9,6 +9,12 @@ Based on "Create macOS or Linux virtual machines" at https://developer.apple.com
 
 ## 100 - Introduction
 
+## 200 - Requirements
+
+## 300 - Building Our Application
+
+See [README.md](./300/README.md)
+
 Transcript:
 
  Benjamin Poulain: Hi everyone, and welcome to our session about virtualization.
@@ -336,3 +342,5 @@ We've seen that creating virtual machines has never been simpler.
  We have also seen that virtual machines are ridiculously fast on macOS.
  To learn more about Virtualization, I invite you to check out the code samples and documentation.
  And on behalf of the team, we cannot wait to see what you will do next with this technology.
+ 
+ ## 400 - Conclusion
