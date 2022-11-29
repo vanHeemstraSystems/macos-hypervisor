@@ -1,8 +1,12 @@
 # 200 - Linux Virtual Machine on MacOS
  
- Finally, we will turn our eyes onto Linux.
+Based on "Create macOS or Linux virtual machines" at https://developer.apple.com/videos/play/wwdc2022/10002/ from 15:12 onwards 
+ 
+Finally, we will turn our eyes onto Linux.
+ 
  Virtualization framework has supported Linux since the very beginning in macOS Big Sur.
  In macOS Ventura, we have added some pretty cool new features, and we want to share some of them with you.
+
 First, we will see how we can install full Linux distributions, completely unmodified, in virtual machines.
  Then we will look at a new device we are adding to show UI from Linux.
  And finally, we will look at how we can take advantage of Rosetta 2 to run Linux binaries in virtual machines.
@@ -21,6 +25,7 @@ First, we will see how we can install full Linux distributions, completely unmod
  Finally, as always, we add our device in the main configuration.
  Here, the USB device appears next to another storage device, the main disk on which we will install Linux.
  Now we have a USB drive, but we need a way to boot from it.
+
 In macOS Ventura, we have added support for EFI.
  EFI is an industry standard for booting both ARM and Intel hardware.
  We are bringing the same support to virtual machines.
@@ -44,6 +49,7 @@ In macOS Ventura, we have added support for EFI.
  Linux renders the content, gives the rendered frame to Virtualization framework, which can then display it.
  You can now show this content in your app with VZVirtualMachineView just like on macOS.
  Let’s see how to set it up.
+
 Setting up the device is similar to what we did for macOS.
  We start by creating a VZVirtioGraphicsDeviceConfiguration.
  We need to define the size of our virtual display.
@@ -58,6 +64,7 @@ Setting up the device is similar to what we did for macOS.
  We'll swap the path from our Mac drive to our Linux drive.
  Next, we need a boot loader.
  We set up EFI with VZEFIBootLoader.
+
 We first create the EFI boot loader object.
  Then we load the variable store from its file.
  And finally, we set EFI as the boot loader on our configuration.
@@ -74,9 +81,11 @@ We first create the EFI boot loader object.
  Then Linux shows the content of the UI through the Virtio GPU device.
  And we can use the mouse to interact with Linux.
  Last but not least, we'll see how we can take advantage of the Rosetta 2 technology inside Linux.
+
 For many of us, we love developing services on our Mac, but once our work is ready, the binaries we create may need to run on x86 servers.
  x86 instruction emulation has been great for this, but we can do better.
  In macOS Ventura, we are bringing the power of Rosetta 2 to Linux binaries.
+
 What Rosetta 2 does is translate the Linux x86-64 binaries inside your virtual machine.
  This means you can run your favorite ARM Linux distribution, and its x86-64 apps can run with Rosetta.
  And it's fast.
@@ -89,6 +98,7 @@ What Rosetta 2 does is translate the Linux x86-64 binaries inside your virtual m
  Finally, we set up our device on the configuration as usual.
  Now our virtual machine is ready to use Rosetta.
  Next, let’s see how Linux can take advantage of it.
+
 In Linux, we start by mounting the shared directory in the file system.
  What we see from Linux is a Rosetta binary that can translate applications.
  Then we can use update-binfmts to tell the system to use Rosetta to handle any x86-64 binary.
@@ -96,11 +106,13 @@ In Linux, we start by mounting the shared directory in the file system.
  It's all in the documentation.
  Now Linux is ready.
  Every x86-64 binary launched will be translated by Rosetta.
+
 Before we end our Linux section, let’s see everything together.
  Here, we have a full Linux distribution installed from scratch.
  We can show its UI with Virtio GPU 2D.
  From within the VM, we run a PHP server with Rosetta.
  And we can just connect to it from macOS host.
+
 We've seen that creating virtual machines has never been simpler.
  With Virtualization framework, you can get virtual machines running with just a few lines of code.
  We have also seen that virtual machines are ridiculously fast on macOS.
