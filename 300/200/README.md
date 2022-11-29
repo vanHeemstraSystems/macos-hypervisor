@@ -1,6 +1,8 @@
 # 200 - Linux Virtual Machine on MacOS
  
-Based on "Create macOS or Linux virtual machines" at https://developer.apple.com/videos/play/wwdc2022/10002/ from 15:12 onwards 
+Based on "Create macOS or Linux virtual machines" at https://developer.apple.com/videos/play/wwdc2022/10002/ from 15:12 to 22:21
+
+Documentation at https://developer.apple.com/documentation/virtualization
  
 Finally, we will turn our eyes onto Linux.
  
