@@ -3,15 +3,9 @@
 See [README.md](./300/README.md)
 
 Transcript:
-
- Benjamin Poulain: Hi everyone, and welcome to our session about virtualization.
- This is what we are going to do together today.
- We'll see how you can run macOS and Linux inside virtual machines, on Apple silicon.
- By the end of this session, you will be able to do the same on your own Mac.
- This may seem a little ambitious, but stick with us, and we'll do it together.
- Here is our agenda for today.
- We will start with an overview of virtualization technologies, and we'll see how to use Virtualization framework to build virtual machines.
- Then we'll do a deep dive into macOS.
+ 
+ ## 100 - Linux Virtual Machine on MacOS
+ 
  We'll see how we can set up a virtual Mac and install macOS into it.
  And finally, we'll do a second deep dive, this time into Linux.
  We'll see how to run full Linux distributions and some cool new features.
@@ -76,7 +70,8 @@ After we have configured our Mac, we get it by the mail.
  Then we set our virtual machine as the virtualMachine property on the view, and it's ready.
  Now we can use this VZVirtualMachineView object like any NSView.
  We can integrate it in our app to see the content of the virtual machine.
-To wrap up, we've seen the configuration.
+ 
+## To wrap up, we've seen the configuration.
  The configuration starts with VZVirtualMachineConfiguration, from which we define the CPUs, memory, and our devices.
  From the configuration, we will create a virtual machine, and we will use virtual machine objects.
  We've seen VZVirtualMachine to abstract the VM itself, VZVirtualMachineView to display content, and there are other objects that can help us use the VM.
@@ -223,6 +218,10 @@ Everything is ready.
  And here it is.
  We have configured macOS from scratch.
  We can see the shared directory and the project we were editing right now.
+ 
+ 
+## 200 - Linux Virtual Machine on MacOS
+ 
  Finally, we will turn our eyes onto Linux.
  Virtualization framework has supported Linux since the very beginning in macOS Big Sur.
  In macOS Ventura, we have added some pretty cool new features, and we want to share some of them with you.
