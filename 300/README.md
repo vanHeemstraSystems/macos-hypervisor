@@ -4,7 +4,7 @@ See [README.md](./300/README.md)
 
 Transcript:
  
- ## 100 - Linux Virtual Machine on MacOS
+ ## 100 - MacOS Virtual Machine on MacOS
  
  We'll see how we can set up a virtual Mac and install macOS into it.
  And finally, we'll do a second deep dive, this time into Linux.
@@ -71,7 +71,8 @@ After we have configured our Mac, we get it by the mail.
  Now we can use this VZVirtualMachineView object like any NSView.
  We can integrate it in our app to see the content of the virtual machine.
  
-## To wrap up, we've seen the configuration.
+### To wrap up, we've seen the configuration.
+
  The configuration starts with VZVirtualMachineConfiguration, from which we define the CPUs, memory, and our devices.
  From the configuration, we will create a virtual machine, and we will use virtual machine objects.
  We've seen VZVirtualMachine to abstract the VM itself, VZVirtualMachineView to display content, and there are other objects that can help us use the VM.
