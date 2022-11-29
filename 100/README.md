@@ -16,3 +16,5 @@ This may seem a little ambitious, but stick with us, and we'll do it together.
  
 We will start with an overview of virtualization technologies, and we'll see how to use Virtualization framework to build virtual machines.
 Then we'll do a deep dive into macOS.
+
+Documentation at https://developer.apple.com/documentation/virtualization
