@@ -1,5 +1,7 @@
 # 100 - MacOS Virtual Machine on MacOS
  
+Based on "Create macOS or Linux virtual machines" at https://developer.apple.com/videos/play/wwdc2022/10002/ 
+ 
  We'll see how we can set up a virtual Mac and install macOS into it.
  And finally, we'll do a second deep dive, this time into Linux.
  We'll see how to run full Linux distributions and some cool new features.
