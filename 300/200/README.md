@@ -112,9 +112,3 @@ Before we end our Linux section, let’s see everything together.
  We can show its UI with Virtio GPU 2D.
  From within the VM, we run a PHP server with Rosetta.
  And we can just connect to it from macOS host.
-
-We've seen that creating virtual machines has never been simpler.
- With Virtualization framework, you can get virtual machines running with just a few lines of code.
- We have also seen that virtual machines are ridiculously fast on macOS.
- To learn more about Virtualization, I invite you to check out the code samples and documentation.
- And on behalf of the team, we cannot wait to see what you will do next with this technology.
