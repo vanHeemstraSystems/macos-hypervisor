@@ -1,10 +1,8 @@
 # 300 - Building Our Application
 
-See [README.md](./300/README.md)
-
-Transcript:
+## 100 - MacOS Virtual Machine on MacOS
  
- ## 100 - MacOS Virtual Machine on MacOS
+See [README.md](./100/README.md)
  
  We'll see how we can set up a virtual Mac and install macOS into it.
  And finally, we'll do a second deep dive, this time into Linux.
